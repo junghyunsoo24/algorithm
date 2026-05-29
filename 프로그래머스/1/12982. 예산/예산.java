@@ -5,7 +5,7 @@ class Solution {
         int currentBudget = 0;
         int answer = 0;
         for(int i = 0; i < d.length; i++){
-            if(currentBudget < budget && (d[i] + currentBudget <= budget)){
+            if(d[i] + currentBudget <= budget){
                 currentBudget += d[i];
                 answer ++;
             }
